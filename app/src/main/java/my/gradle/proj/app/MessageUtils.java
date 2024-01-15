@@ -5,6 +5,6 @@ package my.gradle.proj.app;
 
 class MessageUtils {
     public static String getMessage() {
-        return "Hello      World!";
+        return "Hello World!";
     }
 }
