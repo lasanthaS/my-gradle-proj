@@ -30,4 +30,4 @@ tasks.named('build').configure {
     println "Built and published to .m2 ${project.name}!"
 }
 
-afterReleaseBuild.dependsOn('publish')
+// afterReleaseBuild.dependsOn('publish')
