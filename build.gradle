@@ -19,6 +19,7 @@ release {
 configure(subprojects) { project ->
     apply plugin: 'java'
     apply plugin: 'maven-publish'
+    apply plugin: 'net.researchgate.release'
     apply from: "${rootDir}/gradle/my-modules.gradle"
 
     println "Configuring ${project.name}..."

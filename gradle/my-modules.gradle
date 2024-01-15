@@ -27,3 +27,6 @@ tasks.named('publish').configure {
 }
 
 afterReleaseBuild.dependsOn('publish')
+// tasks.named('afterReleaseBuild').configure {
+//     dependsOn('publish')
+// }
