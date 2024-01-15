@@ -5,6 +5,7 @@ plugins {
 }
 
 ext {
+    println('******** invoking build.gradle ********');
 }
 
 repositories {
@@ -20,7 +21,7 @@ release {
     }
 }
 
-configure(subprojects) { project ->
+configure(subprojects - rootProject) { project ->
     apply plugin: 'java-library'
     apply plugin: 'maven-publish'
     apply plugin: 'net.researchgate.release'

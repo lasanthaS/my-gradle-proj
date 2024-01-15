@@ -10,5 +10,9 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
 }
 
+ext {
+    println('******** invoking settings.gradle ********');
+}
+
 rootProject.name = 'my-gradle-proj'
 include('app', 'list', 'utilities')
